@@ -198,7 +198,7 @@ for y in range(12):
 score = Score(canvas, 'green')        
 paddle = Paddle(canvas, PADDLE_SPEED, 'blue')
 ball = Ball(canvas, paddle, score, blocks, BALL_SPEED, 'red')
-game_over_text = canvas.create_text(600, 650, text='YOU ARE FU*KIN\' LOSER, GET THE HELL OUT OF HERE DUDE!!', state='hidden',
+game_over_text = canvas.create_text(500, 650, text='YOU ARE FU*KIN\' LOSER, GET THE HELL OUT OF HERE DUDE!!', state='hidden',
                                     fill='red', font=('Courier',20))
 game_start_text = canvas.create_text(600, 650, text='GOOD LUCK!!', state='normal',
                                      fill='blue', font=('Helvetica', 40))
@@ -212,7 +212,7 @@ while True:
         time.sleep(1)
         canvas.itemconfig(game_start_text, state='hidden')
         canvas.itemconfig(game_over_text, state='normal')
-        canvas.create_image(5, 400, anchor=NW, image=my_image2)
+        canvas.create_image(5, 300, anchor=NW, image=my_image2)
         break
     
     tk.update_idletasks()
